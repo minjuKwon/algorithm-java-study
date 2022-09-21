@@ -8,7 +8,6 @@ public class Basic_097 {
 
 		int[][] maze = new int[11][11];
 		int i, j;
-		int ant = 0;
 		int x = 2;
 		int y = 2;
 
@@ -22,19 +21,26 @@ public class Basic_097 {
 
 		sc.close();
 
-		ant = maze[x][y];
-
 		while (true) {
-			if (ant == 0) {
-				maze[x][y] = 9;
-				ant = maze[x][++y];
-			} else if (ant == 1) {
-				ant = maze[++x][--y];
-			} else if (ant == 2) {
+			if (maze[x][y] == 2) {
 				maze[x][y] = 9;
 				break;
 			}
+			if (maze[x][y + 1] == 1) {
+				if (maze[x + 1][y] == 1)
+					break;
+				else
+					x++;
+			} else if (maze[x][y + 1] == 0)
+				y++;
+			if (maze[x][y] == 2) {
+				maze[x][y] = 9;
+				break;
+			}
+			maze[x][y] = 9;
 		}
+
+		maze[2][2] = 9;
 
 		for (i = 1; i < maze.length; i++) {
 			for (j = 1; j < maze[i].length; j++) {
