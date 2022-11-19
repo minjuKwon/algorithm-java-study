@@ -12,11 +12,11 @@ public class Step_06_07_2908 {
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st=new StringTokenizer(br.readLine());
 		
-		StringBuffer sb1=new StringBuffer(st.nextToken());
-		StringBuffer sb2=new StringBuffer(st.nextToken());
+//		StringBuffer sb1=new StringBuffer(st.nextToken());
+//		StringBuffer sb2=new StringBuffer(st.nextToken());
 		
-		int n1=Integer.parseInt(sb1.reverse().toString());
-		int n2=Integer.parseInt(sb2.reverse().toString());
+		int n1=Integer.parseInt(new StringBuffer(st.nextToken()).reverse().toString());
+		int n2=Integer.parseInt(new StringBuffer(st.nextToken()).reverse().toString());
 		
 		if(n1>n2)
 			System.out.println(n1);
