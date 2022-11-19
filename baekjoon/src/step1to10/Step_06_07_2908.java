@@ -12,9 +12,6 @@ public class Step_06_07_2908 {
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st=new StringTokenizer(br.readLine());
 		
-//		StringBuffer sb1=new StringBuffer(st.nextToken());
-//		StringBuffer sb2=new StringBuffer(st.nextToken());
-		
 		int n1=Integer.parseInt(new StringBuffer(st.nextToken()).reverse().toString());
 		int n2=Integer.parseInt(new StringBuffer(st.nextToken()).reverse().toString());
 		
