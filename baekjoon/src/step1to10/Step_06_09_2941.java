@@ -8,22 +8,15 @@ public class Step_06_09_2941 {
 
 	public static void main(String[] args) throws IOException{
 		
+		String [] str= {"c=","c-","dz=","d-","lj","nj","s=","z="};
+		
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		String input=br.readLine();
-		int count=0;
-		for(int i=0;i<input.length();i++) {
-			char ch=input.charAt(i);
-			if(ch>='a'&&ch<='z') {
-				count++;
-				if(i<(input.length()-1)){
-					if((ch=='d'&&input.charAt(i+1)=='z')||((ch=='l'||ch=='n')&&input.charAt(i+1)=='j')) 
-						count--;
-				}
-			}
+		for(int i=0;i<str.length;i++) {
+			if(input.contains(str[i]))
+				input=input.replace(str[i], "*");
 		}
-		
-		System.out.println(count);
-		
+		System.out.println(input.length());
 	}
 
 }
