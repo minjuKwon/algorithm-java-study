@@ -11,12 +11,13 @@ public class Step_07_02_2292 {
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		int n=Integer.parseInt(br.readLine());
 		
-		int answer=(n-1)/6;
 		int a=1;
-		int sum=1;
-		while(sum<=answer){
+		int range=2;
+		while(range<=n){
+			if(n==1)
+				break;
+			range=range+(6*a);
 			a++;
-			sum+=a;
 		}
 		System.out.println(a);
 	}
