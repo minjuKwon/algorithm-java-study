@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 //출처 : https://st-lab.tistory.com/78
-public class Step_07_05_2775_02 {
+public class Step_07_06_2775_02 {
 	
 	public static int [][] APT=new int[15][15];
 	
