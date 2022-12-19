@@ -16,13 +16,14 @@ public class Step_10_01_2750 {
 			arr[i]=Integer.parseInt(br.readLine());
 		}
 		
-		int num;
-		for(int i=0;i<arr.length;i++) {
-			for(int j=0;j<arr.length-1;j++) {
+		//bubble sort
+		int temp;
+		for(int i=1;i<arr.length;i++) {
+			for(int j=0;j<arr.length-i;j++) {
 				if(arr[j]>arr[j+1]) {
-					num=arr[j];
+					temp=arr[j];
 					arr[j]=arr[j+1];
-					arr[j+1]=num;
+					arr[j+1]=temp;
 				}
 			}
 		}
