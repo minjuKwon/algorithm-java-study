@@ -33,7 +33,7 @@ public class Step_10_04_2751_02 {
 	private static void merge_sort(int[]a, int left, int right) {
 		
 		if(left==right)return;
-		int mid=(left+right)/2;
+		int mid=left+(right-left)/2;//avoid overflow
 		
 		merge_sort(a,left,mid);
 		merge_sort(a,mid+1,right);
