@@ -1,4 +1,5 @@
 
 *.class
 basicAlgorithm/.settings/org.eclipse.core.resources.prefs
+baekjoon/bin/.gitignore
 baekjoon/bin/step1to10/Step_01_02.class
