@@ -20,26 +20,30 @@ public class Step_12_01_2798 {
 		for(int i=0;i<N;i++)
 			arr[i]=Integer.parseInt(stArr.nextToken());
 		
-		int answer=0;
-		int  nearNum=0;
+		int answer=blackjack(arr,N,M);
+		System.out.println(answer);
+
+	}
+	
+	static int blackjack(int [] arr, int N, int M) {
+		
+		int result=0;
 		for(int i=0;i<N-2;i++) {
+			if(arr[i]>M) 
+				continue;
 			for(int j=i+1;j<N-1;j++) {
+				if(arr[i]+arr[j]>M) 
+					continue;
 				for(int k=j+1;k<N;k++) {
-					answer=0;
-					answer+=arr[i];
-					answer+=arr[j];
-					answer+=arr[k];
-					if(M>=answer) {
-						if(answer>nearNum) {
-							nearNum=answer;
-						}
-					}
+					int card=arr[i]+arr[j]+arr[k];
+					if(card==M) 
+						return card;
+					if(M>card&&card>result)
+						result=card;
 				}
 			}
 		}
-		
-		System.out.println(nearNum);
-
+		return result;
 	}
 
 }
