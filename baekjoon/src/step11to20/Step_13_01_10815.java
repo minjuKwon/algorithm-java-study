@@ -26,9 +26,9 @@ public class Step_13_01_10815 {
 		for(int i=0;i<M;i++) {
 			int numM=Integer.parseInt(stM.nextToken());
 			if(set.contains(numM)) 
-				sb.append(1).append('\n');
+				sb.append(1).append(' ');
 			else
-				sb.append(0).append('\n');
+				sb.append(0).append(' ');
 		}
 		
 		System.out.println(sb);
