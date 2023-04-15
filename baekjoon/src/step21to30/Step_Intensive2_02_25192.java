@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashSet;
 
-public class Step_intensive2_02_25192 {
+public class Step_Intensive2_02_25192 {
 	
 	public static void main(String[] args) throws IOException {
 		
