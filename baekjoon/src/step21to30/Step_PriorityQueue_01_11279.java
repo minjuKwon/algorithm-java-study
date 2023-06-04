@@ -23,7 +23,7 @@ public class Step_PriorityQueue_01_11279 {
 				if(size==0) {
 					sb.append(0).append('\n');
 				}else {
-					sb.append(pop(x)).append('\n');					
+					sb.append(pop()).append('\n');					
 				}
 			}else {
 				push(x);
@@ -51,7 +51,7 @@ public class Step_PriorityQueue_01_11279 {
 		}
 	}
 	
-	static int pop(int a) {
+	static int pop() {
 		
 		int result=heap[1];
 
