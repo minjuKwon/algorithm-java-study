@@ -58,7 +58,7 @@ public class Step_Graph_12_7576 {
 				
 				if(dx>=0&&dy>=0&&dx<N&&dy<M) {
 					if(board[dx][dy]==0) {
-						board[dx][dy]=board[x][y];
+						board[dx][dy]=board[x][y]+1;
 						queue.offer(new Tomato(dx,dy));
 					}
 				}
