@@ -18,7 +18,6 @@ public class Step_DpInTree_03_2533 {
 		
 		int N=Integer.parseInt(br.readLine());
 		
-		list=new ArrayList<>();
 		dp=new int[N+1][2];
 		visited=new boolean[N+1];
 		
