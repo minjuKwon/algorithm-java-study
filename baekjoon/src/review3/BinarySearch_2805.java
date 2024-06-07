@@ -19,7 +19,7 @@ public class BinarySearch_2805 {
 		int M=Integer.parseInt(st.nextToken());
 		
 		arr=new int[N];
-		long max=0;
+		int max=0;
 		
 		st=new StringTokenizer(br.readLine());
 		for(int i=0;i<N;i++) {
@@ -32,9 +32,9 @@ public class BinarySearch_2805 {
 
 	}
 	
-	static long search(int target, long max) {
-		long min=0;
-		long mid=0;
+	static int search(int target, int max) {
+		int min=0;
+		int mid=0;
 		
 		while(min<=max) {
 			mid=min+((max-min)/2);
