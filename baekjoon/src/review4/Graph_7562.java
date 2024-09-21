@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 public class Graph_7562 {
 	
 	static int [] rangeX= {-2,-1,1,2,-2,-1,1,2};
-	static int [] rangeY= {1,2,2,1,-1,-2,-2,-12};
+	static int [] rangeY= {1,2,2,1,-1,-2,-2,-1};
 
 	public static void main(String[] args) throws IOException{
 		
