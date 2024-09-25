@@ -28,7 +28,7 @@ public class Stack2_3015 {
 				}
 			}
 			
-			while(!stack.isEmpty()) {
+			if(!stack.isEmpty()) {
 				count++;
 			}
 			
