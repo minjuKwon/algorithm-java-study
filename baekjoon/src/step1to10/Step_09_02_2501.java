@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Step09_02_2501 {
+public class Step_09_02_2501 {
 
 	public static void main(String[] args) throws IOException{
 		
